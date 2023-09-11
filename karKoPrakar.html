@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जग्गामा लाग्ने करको प्रकार आम्शिक या पूर्ण ।</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+    width: 100%; /* Added width to labels for better responsiveness */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check:hover {
+    background-color: #0056b3;
+}
+
+.results p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    label {
+        font-size: 16px;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .check {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .results p {
+        font-size: 18px;
+    }
+}
+
+        /* Style the sticky footer */
+        footer {
+  position: sticky;
+  bottom: 0; /* Stick the footer to the bottom */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  z-index: 100; /* Ensure it's above the content */
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="input-group">
+            <label for="length">घरको लम्बाई:</label>
+            <input type="number" id="length" placeholder="लम्बाई">
+        </div>
+        <div class="input-group">
+            <label for="breadth">घरको चौडाई:</label>
+            <input type="number" id="breadth" placeholder="चौडाई" required>
+        </div>
+        <div class="input-group">
+            <label for="area">जग्गाको पुरा क्षेत्रफल:</label>
+            <input type="number" id="area" placeholder="घर बनेको कित्ताको" required>
+        </div>
+        <button class="check" onclick="check()">निकाल्नुहोस</button>
+        <div class="results">
+            <p id="result"></p>
+            <p id="result1"></p>
+            <p id="jagga"></p>
+            <p id="cannot"></p>
+            <p id="gharKoArea"></p>
+            <p id="sampatekar"></p>
+            <p id="malpot"></p>
+        </div>
+    </div>
+    <footer>@ Anup Dahal dahal6270@gmail.com, all rights reserved.</footer>
+    <script src="div2.js"></script>
+</body>
+</html>
